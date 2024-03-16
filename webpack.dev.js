@@ -22,7 +22,10 @@ module.exports = merge(common, {
     open: true,
     historyApiFallback: {
       rewrites: [{from: /./, to: "404.html"}]
-    }
+    },
+    allowedHosts: [
+      '.ireland-market-portal-front.mkuai5.easypanel.host'
+    ]
   },
 
   plugins: [
